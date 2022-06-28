@@ -1,0 +1,65 @@
+$primary-color: rgb(0, 80, 185);
+
+body {
+    min-height: 100vh;
+    margin: 0;
+}
+.App {
+    height: 100vh;
+    margin: 0 30%;
+}
+
+.form {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+    height: inherit;
+}
+
+textarea {
+    margin: 10px 0 5px;
+    border: 1px solid $primary-color;
+    padding: 10px;
+    resize: none;
+}
+textarea:focus-visible {
+    border: 2px solid $primary-color;
+    outline: none;
+}
+button {
+    cursor: pointer;
+    border: 1px solid $primary-color;
+    width: 150px;
+    padding: 10px;
+    margin: 15px 0;
+    color: $primary-color;
+}
+button:hover {
+    background-color: $primary-color;
+    color: white;
+}
+button:disabled {
+    background-color: silver;
+}
+button:disabled:hover {
+    background-color: silver;
+    color: $primary-color;
+}
+input {
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 1px solid $primary-color;
+    padding: 0 0 5px;
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+input:focus {
+    border-bottom: 2px solid $primary-color;
+}
+label {
+    color: red;
+    margin-bottom: 10px;
+}
